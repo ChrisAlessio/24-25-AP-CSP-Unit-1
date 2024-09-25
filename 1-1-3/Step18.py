@@ -22,14 +22,24 @@ for floor in range(num_floors):
     painter.goto(x, y)
     if floor % 3 == 0:
         if color == "gray":
-            color = "blue"
+           color = "blue"
         else:
             color = "gray"
+
+        if floor % 21 == 0 and floor > 0:
+            x = x + 75
+            y = -150
+
+    painter.color(color)
     y = y + 5  # location of next floor
 
     # draw the floor
     painter.pendown()
     painter.forward(50)
+
+    #Horizontal movement
+
+
 
 wn = trtl.Screen()
 wn.mainloop()
