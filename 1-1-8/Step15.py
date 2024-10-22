@@ -3,6 +3,8 @@
 my_courses = ["English", "Math", "CS"]
 
 
+redo = "y"
+
 
 for course in my_courses:
     print() # blank line
@@ -22,8 +24,6 @@ else:
     print("F")
 
 redo = input("Do you need to re-do these grades? (y/n)")
-redo = "y"
-
 while (redo == "y"):
     print("Enter your points for " + course)
     points = int(input("Points -> "))
